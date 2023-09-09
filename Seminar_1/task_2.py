@@ -4,3 +4,14 @@
 # Input: 20 21 22(ввод чисел НЕ в одну строку)
 # Output: 
 # 32
+
+
+import math
+
+class1 = int(input("Введите колличество учащихся в 1м классе: "))
+class2 = int(input("Введите колличество учащихся в 2м классе: "))
+class3 = int(input("Введите колличество учащихся в 3м классе: "))
+
+desk = (math.ceil(class1 / 2) + math.ceil(class2 / 2) + math.ceil(class3 / 2) )
+
+print (desk)
