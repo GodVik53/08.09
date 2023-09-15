@@ -4,8 +4,8 @@
 
 
 n = int(input("Введите число: "))
-
 count = 0
+
 while 2**count <= n:
     print(2**count, end=" ")
     count += 1

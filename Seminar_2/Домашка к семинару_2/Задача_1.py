@@ -4,3 +4,18 @@
 # 5 -> 1 0 1 1 0
 # 2
 
+
+from random import randint
+
+N = int(input("Введите количество монет на столе: "))
+list = []
+list_1 = list
+for i in range(N):
+    n = new.random(0,1)
+    list_1.append(n)
+#count_1 = 0
+#count_2 = 0
+#while i < N:
+#    count_1
+
+print(*list_1)
