@@ -7,15 +7,31 @@
 
 from random import randint
 
-N = int(input("Введите количество монет на столе: "))
-list = []
-list_1 = list
-for i in range(N):
-    n = new.random(0,1)
-    list_1.append(n)
-#count_1 = 0
-#count_2 = 0
-#while i < N:
-#    count_1
 
-print(*list_1)
+
+N = int(input("Введите количество монет на столе: "))
+
+import random
+money = [random.randint(0, 1) for i in range(N)]
+print(*money) # выводим рандомно 1 или 0 по колличеству, которое ввели
+
+
+
+N = int(input("Введите количество монет на столе: "))
+
+import random
+money = [random.randint(0, 1) for i in range(N)]
+print(*money) # выводим рандомно 1 или 0 по колличеству, которое ввели
+
+if money.count(int('0')) < money.count(int('1')) :
+    print('меньше "0": ', money.count(int('0')) )
+
+else:
+    print('меньше "1": ', money.count(int('1')) )
+
+
+
+
+
+
+
