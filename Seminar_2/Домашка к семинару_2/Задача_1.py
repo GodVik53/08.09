@@ -6,15 +6,7 @@
 
 
 from random import randint
-
-
-
-N = int(input("Введите количество монет на столе: "))
-
-import random
-money = [random.randint(0, 1) for i in range(N)]
-print(*money) # выводим рандомно 1 или 0 по колличеству, которое ввели
-
+from collections import Counter
 
 
 N = int(input("Введите количество монет на столе: "))
@@ -23,15 +15,7 @@ import random
 money = [random.randint(0, 1) for i in range(N)]
 print(*money) # выводим рандомно 1 или 0 по колличеству, которое ввели
 
-if money.count(int('0')) < money.count(int('1')) :
-    print('меньше "0": ', money.count(int('0')) )
+counted_number = Counter(money)
+most_common_number = counted_number.most_common(2)
 
-else:
-    print('меньше "1": ', money.count(int('1')) )
-
-
-
-
-
-
-
+print(most_common_number[1][0])
